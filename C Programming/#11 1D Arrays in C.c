@@ -6,19 +6,17 @@
 int main() 
 {
 
- int n;
- scanf("%d",&n);
- int a[n];
- int i;
- int s=0;
- for(i=0;i<n;i++)
- {
-     scanf("%d",&a[i]);
- }   
- for(i=0;i<n;i++)
- {
-     s=s+a[i];
- }
- printf("%d",s);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+
+    int n;
+    int sum = 0;
+    scanf("%d",&n);
+    int arr[n]; 
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%d",&arr[i]);
+        sum = sum + arr[i];
+    } 
+    printf("%d",sum);
     return 0;
 }
